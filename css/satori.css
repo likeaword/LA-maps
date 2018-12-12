@@ -1,0 +1,90 @@
+---
+layout: null
+---
+/* --- General --- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  position: relative;
+  background-color: {{ site.page-col }};
+  {% if site.page-img %}
+  background-image: url({{ site.page-img }});
+  background-attachment: fixed;
+  {% endif %}
+}
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+a {
+  color: {{ site.link-col }};
+}
+a:hover,
+a:focus {
+  color: {{ site.hover-col }};
+}
+blockquote {
+  color: #808080;
+  font-style: italic;
+}
+blockquote p:first-child {
+  margin-top: 0;
+}
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: inherit;
+  border-radius: 3px;
+}
+
+/* --- header --- */
+#logo {
+    float: left;
+    padding-top: 15px;
+    width: 189px;
+    height: 50px;
+}
+#title {
+    width: 50%;
+    float: left;
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+#menu {
+    width: 25%;
+    float: right;
+}
+#header {
+    min-height: 100px;
+    background-color: #6C1B78;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* --- main section --- */
+#main-section {
+    padding: 50px;
+}
+
+
+/* --- leaflet.js maps --- */
+#map {
+            height: 500px;
+            align-self: center;
+            padding: 50px;
+        }
+
